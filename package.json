@@ -12,6 +12,7 @@
   "dependencies": {
     "flowbite": "^4.0.2",
     "flowbite-react": "^0.12.17",
+    "lucide-react": "^1.71.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5"
