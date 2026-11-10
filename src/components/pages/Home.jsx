@@ -1,5 +1,11 @@
 import HeroSection from "../home/HeroSection";
+import PopularLinks from "../home/PopularLinks";
 
 export default function Home() {
-  return <HeroSection></HeroSection>;
+  return (
+    <main className="min-h-screen bg-[#FBFAFF]">
+      <HeroSection />
+      <PopularLinks />
+    </main>
+  );
 }
