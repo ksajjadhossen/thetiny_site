@@ -1,9 +1,8 @@
-import React from "react";
 import { Star } from "lucide-react";
 
 export default function TestimonialCard({ item }) {
   return (
-    <div className="w-[300px] sm:w-[320px] bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-sm shrink-0 flex flex-col justify-between text-left">
+    <div className="w-75 sm:w-[320px] bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-sm shrink-0 flex flex-col justify-between text-left">
       <div>
         {/* Star Rating */}
         <div className="flex items-center gap-1 mb-3">

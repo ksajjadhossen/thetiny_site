@@ -3,6 +3,7 @@ import HeroSection from "../home/HeroSection";
 import PopularLinks from "../home/PopularLinks";
 import PricingSection from "../home/PricingSection";
 import TestimonialSection from "../home/TestimonialSection";
+import WhyChooseSection from "../home/WhyChooseSection";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <PopularLinks />
       <FeatureSection />
       <PricingSection />
-      <TestimonialSection></TestimonialSection>
+      <TestimonialSection />
+      <WhyChooseSection />
     </main>
   );
 }
