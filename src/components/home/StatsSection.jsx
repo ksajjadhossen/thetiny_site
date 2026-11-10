@@ -1,12 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, useState } from "react";
 
-// Custom NumberTicker Component to animate numbers smoothly
 function NumberTicker({ value, className = "" }) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const [hasStarted, setHasStarted] = useState(false);
 
-  // Parse numeric value and suffix (e.g., "100K+" -> numeric: 100, suffix: "K+")
   const numericMatch = value.toString().match(/[\d.]+/);
   const numericVal = numericMatch ? parseFloat(numericMatch[0]) : 0;
   const suffix = value.toString().replace(/[\d.]+/, "");
@@ -26,7 +25,6 @@ function NumberTicker({ value, className = "" }) {
     }
 
     return () => {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       if (ref.current) observer.unobserve(ref.current);
     };
   }, [hasStarted]);
@@ -35,7 +33,7 @@ function NumberTicker({ value, className = "" }) {
     if (!hasStarted) return;
 
     let start = 0;
-    const duration = 2000; // 2 seconds
+    const duration = 2000;
     const fps = 60;
     const totalFrames = (duration / 1000) * fps;
     const increment = numericVal / totalFrames;
@@ -53,7 +51,6 @@ function NumberTicker({ value, className = "" }) {
     return () => clearInterval(timer);
   }, [hasStarted, numericVal]);
 
-  // Format decimal values properly if needed
   const formattedCount =
     numericVal % 1 !== 0
       ? count.toFixed(1)
@@ -76,7 +73,7 @@ const statsData = [
 
 export default function StatsSection() {
   return (
-    <div className="w-full bg-[#4F46E5] py-10 text-white mt-16 sm:mt-20">
+    <div className="w-full bg-[rgb(91,33,243)] py-10 text-white mt-16 sm:mt-20">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         {statsData.map((stat, index) => (
           <div key={index} className="flex flex-col items-center">
@@ -84,7 +81,7 @@ export default function StatsSection() {
               value={stat.value}
               className="text-3xl sm:text-4xl font-extrabold tracking-tight"
             />
-            <span className="text-xs sm:text-sm text-indigo-200 font-medium mt-1">
+            <span className="text-xs sm:text-sm text-purple-100 font-medium mt-1">
               {stat.label}
             </span>
           </div>
