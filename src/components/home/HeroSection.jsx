@@ -10,7 +10,7 @@ export default function HeroSection() {
           <TrustBadge />
         </div>
 
-        <h1 className="text-[44px] sm:text-[52px] md:text-[56px] font-[900] text-slate-900 leading-[1.1] hero-title">
+        <h1 className="text-[44px] sm:text-[52px] md:text-[56px] font-black text-slate-900 leading-[1.1] hero-title">
           Shorten Your URL <br />
           <span className="text-[#5B21F3]">in seconds</span>
         </h1>

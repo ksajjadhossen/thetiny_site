@@ -1,6 +1,7 @@
 import FeatureSection from "../home/FeatureSection";
 import HeroSection from "../home/HeroSection";
 import PopularLinks from "../home/PopularLinks";
+import PricingSection from "../home/PricingSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <PopularLinks />
       <FeatureSection />
+      <PricingSection />
     </main>
   );
 }
