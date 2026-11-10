@@ -1,4 +1,3 @@
-import React from "react";
 import PricingCard from "./PricingCard";
 
 const pricingPlans = [
@@ -63,7 +62,7 @@ export default function PricingSection() {
         {/* Section Header */}
         <div className="text-center mb-14">
           <p
-            className="font-bold uppercase tracking-[0.1em] text-slate-400 mb-3"
+            className="font-bold uppercase tracking-widest text-slate-400 mb-3"
             style={{ fontSize: "0.875rem" }}
           >
             PRICING

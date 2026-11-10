@@ -1,4 +1,3 @@
-import React from "react";
 import { Check } from "lucide-react";
 
 export default function PricingCard({ plan }) {
@@ -32,7 +31,7 @@ export default function PricingCard({ plan }) {
         </span>
 
         <div className="flex items-baseline gap-1 mt-2.5 mb-2">
-          <span className="text-4xl sm:text-[42px] font-[900] tracking-tight">
+          <span className="text-4xl sm:text-[42px] font-black tracking-tight">
             {price}
           </span>
           <span
