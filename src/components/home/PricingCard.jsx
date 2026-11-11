@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 
 export default function PricingCard({ plan }) {
   const {
@@ -75,11 +75,12 @@ export default function PricingCard({ plan }) {
         </ul>
       </div>
 
-      {/* Action Button */}
+      {/* Action Button with Premium Hover & Moving Arrow Effect */}
       <button
-        className={`w-full py-3 px-6 rounded-xl font-semibold text-xs sm:text-sm transition-all shadow-sm active:scale-95 ${buttonStyle}`}
+        className={`group w-full py-3 px-6 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300 shadow-sm hover:shadow-lg active:scale-95 flex items-center justify-center gap-2 ${buttonStyle}`}
       >
-        {buttonText}
+        <span>{buttonText}</span>
+        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" />
       </button>
     </div>
   );
